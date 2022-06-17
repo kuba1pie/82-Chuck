@@ -1,25 +1,22 @@
 <script setup lang="ts">
+import TheHomeVue from "./views/TheHome.vue";
+
 import TheHeader from "./components/TheHeader.vue";
 import TheFooter from "./components/TheFooter.vue";
 
-import { useCityStore } from "@/stores/CityStore";
+import { useChuckStore } from "@/stores/ChuckStore";
 
-useCityStore();
+useChuckStore();
 </script>
 
 <template>
   <TheHeader />
-
-  <main>
-    <router-view> </router-view>
-  </main>
+  <TheHomeVue />
   <TheFooter />
 </template>
 
 <style lang="sass">
-@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Raleway:wght@100;200;300;400&display=swap')
-html, h1
-  font-family: 'Raleway', sans-serif
-body
-  max-width: 1500px
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap')
+html, body
+  font-family: 'Source Sans Pro', sans-serif
 </style>

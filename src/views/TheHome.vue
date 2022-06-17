@@ -1,14 +1,14 @@
 <template>
   <section class="shadow-2 rounded-borders">
-    <CityForm />
-    <CityResult />
+    <CategoriesList />
   </section>
+  <JokeDialog />
 </template>
 <script setup lang="ts">
-import CityForm from "@/components/Home/CityForm.vue";
-import CityResult from "@/components/Home/CityResult.vue";
+import CategoriesList from "@/components/Home/CategoriesList.vue";
+import JokeDialog from "@/components/Home/JokeDialog.vue";
 
-import { useCityStore } from "@/stores/CityStore";
+import { useChuckStore } from "@/stores/ChuckStore";
 
-useCityStore();
+useChuckStore();
 </script>

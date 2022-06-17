@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>Json city list</h1>
+    <h1>Chuck Norris Jokes</h1>
   </header>
 </template>
 <style lang="sass">
