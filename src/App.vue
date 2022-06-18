@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import TheHomeVue from "./views/TheHome.vue";
 
-import TheHeader from "./components/TheHeader.vue";
-import TheFooter from "./components/TheFooter.vue";
-
 import { useChuckStore } from "@/stores/ChuckStore";
 
 useChuckStore();
