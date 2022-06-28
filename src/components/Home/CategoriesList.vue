@@ -1,12 +1,15 @@
 <template>
   <div class="q-pa-md doc-container">
-    <div class="row items-center q-gutter-sm">
+    <div
+      class="row items-center q-gutter-sm"
+      style="max-width: 1400px; margin: 0 auto; justify-content: center"
+    >
       <q-btn
         v-for="item in store.categories"
         v-bind:key="item"
         outline
+        q-ma-lg
         rounded
-        color="primary"
         :label="item"
         @click="getJoke(item)"
       />

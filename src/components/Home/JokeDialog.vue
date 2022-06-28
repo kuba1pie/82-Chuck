@@ -10,10 +10,13 @@
           round
           dense
           v-close-popup
+          color="blue"
           @click="store.modal = false"
         />
       </q-card-section>
-      <q-card-section>
+      <q-card-section
+        style="text-align: center; font-size: 1.8em; color: #222; padding: 2em"
+      >
         {{ store.jokeValue }}
       </q-card-section>
     </q-card>

@@ -19,4 +19,9 @@ useChuckStore();
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap')
 html, body
   font-family: 'Source Sans Pro', sans-serif
+  background-color: #333
+  color: #eee
+  a
+    color: #ddd
+    font-size: 1.5em
 </style>
